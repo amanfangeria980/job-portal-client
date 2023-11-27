@@ -1,8 +1,11 @@
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-    <h1 className="">Hello Aman</h1>
+    <nav>Navbar</nav>
+    <Outlet/>
+    <footer>Footer</footer>
     </>
   )
 }
