@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Card from "./../components/Card";
 import Jobs from "./Jobs";
 import Sidebar from "./../sidebar/Sidebar";
+import Newsletter from './../components/Newsletter';
 const Home = () => {
   const [query, setQuery] = useState("");
   const handleInputChange = (e) => {
@@ -148,7 +149,7 @@ const Home = () => {
         </div>
 
         {/* Right Side */}
-        <div className="bg-white p-4 rounded">Right</div>
+        <div className="bg-white p-4 rounded"><Newsletter /></div>
       </div>
     </div>
   );
