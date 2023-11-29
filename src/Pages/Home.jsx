@@ -79,10 +79,9 @@ const Home = () => {
         }) =>
           jobLocation.toLowerCase() === selected.toLowerCase() ||
           parseInt(maxPrice) <= parseInt(selected) ||
-          salaryType.toLowerCase() === selected.toLowerCase() ||
+          salaryType.toLowerCase() === selected.toLowerCase() || postingDate >=selected ||
           employmentType.toLowerCase() === selected.toLowerCase()
       );
-      // console.log(filteredJobs);
     }
 
     // Slice the data based on current page
