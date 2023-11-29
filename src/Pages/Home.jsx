@@ -80,7 +80,7 @@ const Home = () => {
           jobLocation.toLowerCase() === selected.toLowerCase() ||
           parseInt(maxPrice) <= parseInt(selected) ||
           salaryType.toLowerCase() === selected.toLowerCase() || postingDate >=selected ||
-          employmentType.toLowerCase() === selected.toLowerCase()
+          employmentType.toLowerCase() === selected.toLowerCase() || experienceLevel.toLowerCase()==selected.toLowerCase()
       );
     }
 
