@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState("false");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenuToggler = () => {
     setIsMenuOpen(!isMenuOpen);
   };
