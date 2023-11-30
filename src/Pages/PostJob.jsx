@@ -5,6 +5,7 @@ const PostJob = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -21,7 +22,13 @@ const PostJob = () => {
       body: JSON.stringify(data)
     })
       .then((res) => res.json())
-      .then((result) => console.log(result));
+      .then((result) =>{
+        // console.log(result)
+        if(result.acknowledged==true){
+          alert("Job Posted Successfully!")
+        }
+        reset();
+      });
   };
 
   const options = [

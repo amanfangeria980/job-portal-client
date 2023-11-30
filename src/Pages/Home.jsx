@@ -16,7 +16,7 @@ const Home = () => {
   const itemsPerPage = 6;
   useEffect(() => {
     setIsLoading(true);
-    fetch("jobs.json")
+    fetch(import.meta.env.VITE_BACKEND_URL+"/all-jobs")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
