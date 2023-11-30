@@ -9,9 +9,19 @@ const PostJob = () => {
     formState: { errors },
   } = useForm();
 
+
   const onSubmit = (data) => {
     data.skills = selectedOption;
-    console.log(data);
+    // console.log(data);
+    fetch(import.meta.env.VITE_BACKEND_URL+"/post-job",{
+      method: "POST",
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
   };
 
   const options = [
