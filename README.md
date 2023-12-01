@@ -1,5 +1,15 @@
 # React + Vite
 
+Frontend deployed on Vercel: 
+
+https://job-portal-client-eta.vercel.app/
+
+Backend deployed on Render (Repo): 
+
+https://github.com/amanfangeria980/job-portal-server
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
