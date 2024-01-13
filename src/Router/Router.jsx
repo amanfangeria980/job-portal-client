@@ -5,6 +5,7 @@ import About from './../Pages/About';
 import PostJob from './../Pages/PostJob';
 import MyJobs from './../Pages/MyJobs';
 import SalaryPage from "../Pages/SalaryPage";
+import UpdateJob from "../Pages/UpdateJob";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path: "/salary",
         element: <SalaryPage />
+      },
+      {
+        path:"edit-job/:id",
+        element: <UpdateJob />,
+        loader: ({params})=> fetch(`${import.meta.env.VITE_BACKEND_URL}/all-jobs/${params.id}`)
       }
     ],
   },
