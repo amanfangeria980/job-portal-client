@@ -6,6 +6,7 @@ import PostJob from './../Pages/PostJob';
 import MyJobs from './../Pages/MyJobs';
 import SalaryPage from "../Pages/SalaryPage";
 import UpdateJob from "../Pages/UpdateJob";
+import JobDetails from "../Pages/JobDetails";
 import Login from "../Pages/Login";
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:"/login",
         element: <Login />
+      },
+      {
+        path: "/job/:id",
+        element: <JobDetails />
       }
     ],
   },
