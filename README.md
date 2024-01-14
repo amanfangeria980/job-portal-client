@@ -2,7 +2,7 @@
 
 Frontend deployed on Vercel: 
 
-https://job-portal-client-eta.vercel.app/
+https://gethired-app.vercel.app/
 
 Backend deployed on Render (Repo): 
 
