@@ -1,3 +1,14 @@
+### JOB-PORTAL-REACT-APP
+This is a job portal where recruiters can post job listings and job seekers can apply.
+
+### [See Deployment](https://gethired-app.vercel.app/)
+
+### Preview
+
+<img width="1905" alt="image" src="https://github.com/user-attachments/assets/32eae3f2-7dd8-49b0-afe2-bf554ab1d874">
+
+
+
 # React + Vite
 
 Frontend deployed on Vercel: 
